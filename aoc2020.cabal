@@ -14,3 +14,29 @@ Executable 2
 Executable 3
   Build-Depends:  base
   Main-Is:        3.hs
+
+Executable 4
+  Build-Depends:  base,
+                  split
+  Main-Is:        4.hs
+
+Executable 5
+  Build-Depends:  base
+  Main-Is:        5.hs
+
+Executable 6
+  Build-Depends:  base,
+                  split
+  Main-Is:        6.hs
+
+Executable 7
+  Build-Depends:  base,
+                  split,
+                  containers
+  Main-Is:        7.hs
+
+Executable 8
+  Build-Depends:  base,
+                  split,
+                  containers
+  Main-Is:        8.hs
