@@ -40,3 +40,9 @@ Executable 8
                   split,
                   containers
   Main-Is:        8.hs
+
+Executable 9
+  Build-Depends:  base,
+                  split,
+                  containers
+  Main-Is:        9.hs
