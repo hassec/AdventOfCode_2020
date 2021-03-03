@@ -52,8 +52,10 @@ Executable 10
                   split,
                   containers
   Main-Is:        10.hs
-Executable 10
+
+Executable 11
   Build-Depends:  base,
                   split,
-                  containers
-  Main-Is:        10.hs
+                  containers,
+                  unordered-containers
+  Main-Is:        11.hs

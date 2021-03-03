@@ -1,6 +1,5 @@
 import Data.List (sort)
 import Data.List.Split (splitOn)
-import Debug.Trace
 
 countOccurences :: (Eq a) => a -> [a] -> Int
 countOccurences x = length . filter (==x)
