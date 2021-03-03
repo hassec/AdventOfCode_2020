@@ -3,50 +3,55 @@ Version:        0.1
 cabal-version:  >= 1.2
 Build-Type:     Simple
 
-Executable 1
+Executable 01
   Build-Depends:  base
-  Main-Is:        1.hs
+  Main-Is:        01.hs
 
-Executable 2
+Executable 02
   Build-Depends:  base
-  Main-Is:        2.hs
+  Main-Is:        02.hs
 
-Executable 3
+Executable 03
   Build-Depends:  base
-  Main-Is:        3.hs
+  Main-Is:        03.hs
 
-Executable 4
+Executable 04
   Build-Depends:  base,
                   split
-  Main-Is:        4.hs
+  Main-Is:        04.hs
 
-Executable 5
+Executable 05
   Build-Depends:  base
-  Main-Is:        5.hs
+  Main-Is:        05.hs
 
-Executable 6
+Executable 06
   Build-Depends:  base,
                   split
-  Main-Is:        6.hs
+  Main-Is:        06.hs
 
-Executable 7
+Executable 07
   Build-Depends:  base,
                   split,
                   containers
-  Main-Is:        7.hs
+  Main-Is:        07.hs
 
-Executable 8
+Executable 08
   Build-Depends:  base,
                   split,
                   containers
-  Main-Is:        8.hs
+  Main-Is:        08.hs
 
-Executable 9
+Executable 09
   Build-Depends:  base,
                   split,
                   containers
-  Main-Is:        9.hs
+  Main-Is:        09.hs
 
+Executable 10
+  Build-Depends:  base,
+                  split,
+                  containers
+  Main-Is:        10.hs
 Executable 10
   Build-Depends:  base,
                   split,
