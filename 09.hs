@@ -1,8 +1,7 @@
-import Data.List (tails, inits)
-
+import Data.List (inits, tails)
 
 uniquePairSum :: [Int] -> [Int]
-uniquePairSum l = [ x + y | (x:ys) <- tails l, y <- ys]
+uniquePairSum l = [x + y | (x : ys) <- tails l, y <- ys]
 
 check :: Int -> [Int] -> (Bool, Int)
 check x xs = (x `elem` uniquePairSum xs, x)
@@ -20,8 +19,8 @@ main = do
   -- Creates a list of all possible preambles.
   let pres = map (take n) $ tails array
 
-  let num =  snd . head $ filter (not . fst) $ zipWith check numsToTest pres
+  let num = snd . head $ filter (not . fst) $ zipWith check numsToTest pres
   print $ "Part 1: " ++ show num
 
-  let x =  head [ x | x <- concatMap inits $ tails array, sum x == num ]
+  let x = head [x | x <- concatMap inits $ tails array, sum x == num]
   print $ "Part 2: " ++ show (maximum x + minimum x)

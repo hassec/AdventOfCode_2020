@@ -75,7 +75,6 @@ evolveSeatVis maxX maxY sl pos s
             val = HMS.lookup (x, y) sl
     count = length . filter (== Seat False) $ neighbours
 
-
 main = do
   (layout, width, height) <- getLayout <$> getContents
 

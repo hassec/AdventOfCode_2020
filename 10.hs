@@ -2,18 +2,19 @@ import Data.List (sort)
 import Data.List.Split (splitOn)
 
 countOccurences :: (Eq a) => a -> [a] -> Int
-countOccurences x = length . filter (==x)
+countOccurences x = length . filter (== x)
 
 -- possible combinations for x adapters
 combs :: Int -> Int
-combs x = 2 ^ ( x - 1 )
+combs x = 2 ^ (x - 1)
 
-toFactor :: [Int]  -> Int
+toFactor :: [Int] -> Int
 toFactor [] = 1
-toFactor l  = case length l of 1 -> 1
-                               2 -> 2
-                               3 -> 4
-                               4 -> 7
+toFactor l = case length l of
+  1 -> 1
+  2 -> 2
+  3 -> 4
+  4 -> 7
 
 main = do
   input <- getContents
@@ -28,7 +29,7 @@ main = do
   let steps = zipWith (-) (tail full_list) full_list
 
   -- get distribution
-  let diffs =  [ countOccurences x steps | x <- [1..3] ]
+  let diffs = [countOccurences x steps | x <- [1 .. 3]]
   print $ "Part 1 distribution: " ++ show diffs
   print $ "Part 1 solution: " ++ show (head diffs * last diffs)
 

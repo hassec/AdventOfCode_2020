@@ -1,4 +1,4 @@
-import Data.List (nub, intersect, delete)
+import Data.List (delete, intersect, nub)
 import Data.List.Split (splitOn)
 
 main = do
