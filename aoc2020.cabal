@@ -59,3 +59,11 @@ Executable 11
                   containers,
                   unordered-containers
   Main-Is:        11.hs
+
+Executable 12
+  Build-Depends:  base,
+                  split,
+                  containers,
+                  unordered-containers,
+                  mtl
+  Main-Is:        12.hs
